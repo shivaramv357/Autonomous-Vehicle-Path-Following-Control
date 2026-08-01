@@ -88,15 +88,6 @@ Within the provided MATLAB/Simulink vehicle simulation framework, my contributio
 
 ---
 
-## Future Work
-
-- Model Predictive Control (MPC)
-- Adaptive controller tuning
-- Dynamic obstacle avoidance
-- Curved road scenarios
-
----
-
 ## Academic Note
 
 The vehicle simulation framework used in this project was provided as part of the course **Introduction to Autonomous Driving** at Westsächsische Hochschule Zwickau.
