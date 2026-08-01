@@ -1,8 +1,48 @@
 # Autonomous-Vehicle-Path-Following-Control
+
 Implementation of Stanley lateral and PI longitudinal controllers for autonomous vehicle path-following using MATLAB/Simulink.
 
+---
 
+## Project Overview
 
+This project presents the implementation of a path-following controller for an autonomous vehicle using MATLAB/Simulink. A Stanley controller was implemented for lateral control, while a PI controller was used for longitudinal speed control. The controller was integrated into a provided vehicle simulation framework based on a 3DOF bicycle vehicle model and evaluated through trajectory tracking simulations.
+
+---
+
+## My Contribution
+
+Within the provided MATLAB/Simulink vehicle simulation framework, my contributions included:
+
+- Implementing the Stanley lateral controller.
+- Implementing the PI longitudinal controller.
+- Tuning controller parameters for stable path tracking.
+- Evaluating controller performance through simulation.
+
+---
+
+## Features
+
+- Stanley lateral controller
+- PI longitudinal controller
+- MATLAB/Simulink implementation
+- 3DOF bicycle vehicle model
+- Closed-loop path-following control
+- Trajectory tracking evaluation
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| MATLAB | Simulation environment |
+| Simulink | Controller implementation |
+| Stanley Controller | Lateral control |
+| PI Controller | Longitudinal control |
+| 3DOF Bicycle Model | Vehicle dynamics |
+
+---
 
 ## Controller Architecture
 
@@ -10,12 +50,52 @@ Implementation of Stanley lateral and PI longitudinal controllers for autonomous
 
 **Figure 1:** Closed-loop path-following controller architecture using a Stanley lateral controller and a PI longitudinal controller.
 
+---
+
 ## Controller Implementation
+
+### Stanley Controller Subsystem
 
 ![Stanley Controller](images/stanley_controller_subsystem.png)
 
-![Simulation Framework](images/overall_simulataion_framework.png)
+**Figure 2:** Simulink implementation of the Stanley lateral controller and PI longitudinal controller within the provided simulation framework.
 
+### Overall Simulation Framework
+
+![Simulation Framework](images/overall_simulation_framework.png)
+
+**Figure 3:** Overall MATLAB/Simulink vehicle simulation framework integrating the controller, vehicle model, evaluation, and visualization components.
+
+---
+
+## Project Workflow
+
+1. Load the reference path and reference speed.
+2. Compute the vehicle tracking error.
+3. The Stanley controller computes the steering angle.
+4. The PI controller computes the acceleration command.
+5. The vehicle model updates the vehicle states.
+6. Vehicle feedback is used for continuous closed-loop path tracking.
+
+---
+
+## Challenges
+
+- Implementing the Stanley controller within the provided framework.
+- Tuning Stanley and PI controller parameters.
+- Achieving stable trajectory tracking.
+- Reducing path-following error.
+
+---
+
+## Future Work
+
+- Model Predictive Control (MPC)
+- Adaptive controller tuning
+- Dynamic obstacle avoidance
+- Curved road scenarios
+
+---
 
 ## Academic Note
 
