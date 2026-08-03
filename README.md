@@ -6,7 +6,7 @@ Implementation of Stanley lateral and PI longitudinal controllers for autonomous
 
 ## Project Overview
 
-This project presents the implementation of a path-following controller for an autonomous vehicle using MATLAB/Simulink. A Stanley controller was implemented for lateral control, while a PI controller was used for longitudinal speed control. The controller was integrated into a provided vehicle simulation framework based on a 3DOF bicycle vehicle model and evaluated through trajectory tracking simulations.
+This project presents the implementation of a path-following controller for an autonomous vehicle using MATLAB/Simulink. A Stanley controller was implemented for lateral path tracking, while a PI controller was implemented for longitudinal speed control. The controller was integrated into a provided vehicle simulation framework based on a 3DOF bicycle vehicle model and evaluated through trajectory tracking simulations.
 
 ---
 
@@ -14,10 +14,10 @@ This project presents the implementation of a path-following controller for an a
 
 Within the provided MATLAB/Simulink vehicle simulation framework, my contributions included:
 
-- Implementing the Stanley lateral controller.
-- Implementing the PI longitudinal controller.
-- Tuning controller parameters for stable path tracking.
-- Evaluating controller performance through simulation.
+- Implementing the Stanley lateral controller
+- Implementing the PI longitudinal controller
+- Tuning controller parameters for stable path tracking
+- Evaluating controller performance through simulation
 
 ---
 
@@ -80,12 +80,12 @@ The figure below compares the reference path with the vehicle trajectory generat
 
 ## Project Workflow
 
-1. Load the reference path and reference speed.
-2. Compute the vehicle tracking error.
-3. The Stanley controller computes the steering angle.
-4. The PI controller computes the acceleration command.
-5. The vehicle model updates the vehicle states.
-6. Vehicle feedback is used for continuous closed-loop path tracking.
+1. Load the reference path and reference speed
+2. Compute the lateral and longitudinal tracking errors
+3. The Stanley controller computes the steering angle
+4. The PI controller computes the acceleration command
+5. The vehicle model updates the vehicle states
+6. Vehicle feedback is used for continuous closed-loop path tracking
 
 ---
 
@@ -106,10 +106,10 @@ The figure below compares the reference path with the vehicle trajectory generat
 
 ## Challenges
 
-- Implementing the Stanley controller within the provided framework.
-- Tuning Stanley and PI controller parameters.
-- Achieving stable trajectory tracking.
-- Reducing path-following error.
+- Implementing the Stanley controller within the provided framework
+- Tuning Stanley and PI controller parameters
+- Achieving stable trajectory tracking
+- Achieving accurate trajectory tracking with minimal path-following error
 
 ---
 
@@ -117,4 +117,4 @@ The figure below compares the reference path with the vehicle trajectory generat
 
 The vehicle simulation framework used in this project was provided as part of the course **Introduction to Autonomous Driving** at **Westsächsische Hochschule Zwickau (WHZ)**.
 
-My contribution focused on implementing the Stanley lateral controller, PI longitudinal controller, controller tuning, and performance evaluation. The original course materials, vehicle model, and complete Simulink framework are not included in this repository.
+My contribution focused on implementing the Stanley lateral controller, the PI longitudinal controller, controller tuning, and performance evaluation. The original course materials, vehicle model, and complete Simulink framework are not included in this repository.
