@@ -78,6 +78,24 @@ The figure below compares the reference path with the vehicle trajectory generat
 
 ---
 
+---
+
+## Repository Structure
+
+```text
+Autonomous-Vehicle-Path-Following-Control/
+│
+├── images/
+│   ├── controller_architecture.png
+│   ├── stanley_controller_subsystem.png
+│   ├── overall_simulation_framework.png
+│   └── path_tracking_performance.png
+│
+└── README.md
+```
+
+---
+
 ## Project Workflow
 
 1. Load the reference path and reference speed.
