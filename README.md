@@ -23,12 +23,12 @@ Within the provided MATLAB/Simulink vehicle simulation framework, my contributio
 
 ## Features
 
-- Stanley lateral controller
-- PI longitudinal controller
+- Stanley lateral path-following controller
+- PI longitudinal speed controller
+- Closed-loop autonomous vehicle path tracking
 - MATLAB/Simulink implementation
-- 3DOF bicycle vehicle model
-- Closed-loop path-following control
-- Trajectory tracking evaluation
+- 3DOF bicycle vehicle dynamics model
+- Trajectory tracking performance evaluation
 
 ---
 
