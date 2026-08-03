@@ -36,11 +36,11 @@ Within the provided MATLAB/Simulink vehicle simulation framework, my contributio
 
 | Technology | Purpose |
 |------------|---------|
-| MATLAB | Simulation environment |
-| Simulink | Controller implementation |
-| Stanley Controller | Lateral control |
-| PI Controller | Longitudinal control |
-| 3DOF Bicycle Model | Vehicle dynamics |
+| MATLAB | Numerical computing and simulation |
+| Simulink | Controller modeling and simulation |
+| Stanley Controller | Lateral path tracking |
+| PI Controller | Longitudinal speed control |
+| 3DOF Bicycle Model | Vehicle dynamics simulation |
 
 ---
 
@@ -74,25 +74,7 @@ The figure below compares the reference path with the vehicle trajectory generat
 
 ![Path Tracking Performance](images/path_tracking_performance.png)
 
-**Figure 4:** Autonomous vehicle path tracking using Stanley and PI controllers. The vehicle trajectory closely follows the reference path while passing through the defined waypoints.
-
----
-
----
-
-## Repository Structure
-
-```text
-Autonomous-Vehicle-Path-Following-Control/
-│
-├── images/
-│   ├── controller_architecture.png
-│   ├── stanley_controller_subsystem.png
-│   ├── overall_simulation_framework.png
-│   └── path_tracking_performance.png
-│
-└── README.md
-```
+**Figure 4:** Path-tracking performance of the implemented Stanley lateral controller and PI longitudinal controller. The simulated vehicle closely follows the reference path while successfully passing through the predefined waypoints.
 
 ---
 
@@ -107,6 +89,21 @@ Autonomous-Vehicle-Path-Following-Control/
 
 ---
 
+## Repository Structure
+
+```text
+.
+├── images/
+│   ├── controller_architecture.png
+│   ├── stanley_controller_subsystem.png
+│   ├── overall_simulation_framework.png
+│   └── path_tracking_performance.png
+├── LICENSE
+└── README.md
+```
+
+---
+
 ## Challenges
 
 - Implementing the Stanley controller within the provided framework.
@@ -118,6 +115,6 @@ Autonomous-Vehicle-Path-Following-Control/
 
 ## Academic Note
 
-The vehicle simulation framework used in this project was provided as part of the course **Introduction to Autonomous Driving** at Westsächsische Hochschule Zwickau.
+The vehicle simulation framework used in this project was provided as part of the course **Introduction to Autonomous Driving** at **Westsächsische Hochschule Zwickau (WHZ)**.
 
-My contribution focused on implementing the Stanley lateral controller, PI longitudinal controller, controller tuning, and performance evaluation. The original course materials and complete Simulink model are not included in this repository.
+My contribution focused on implementing the Stanley lateral controller, PI longitudinal controller, controller tuning, and performance evaluation. The original course materials, vehicle model, and complete Simulink framework are not included in this repository.
